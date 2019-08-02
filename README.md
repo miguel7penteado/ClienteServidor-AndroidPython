@@ -19,6 +19,8 @@ cd ClienteAndroid
 export ANDROID_HOME="/opt/android/sdk"
 # execute o comando gradlew
 ./gradlew
+# agora construa o pacote da aplicação com o comando ./gradlew build
+./gradlew build
 # pronto agora é só esperar gerar o pacote apk para instalar no seu telefone Android
 ```
 ### Servidor - Construção
