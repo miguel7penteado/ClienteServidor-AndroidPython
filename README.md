@@ -5,8 +5,8 @@ Este repositório consiste em duas pastas:
 1. **CienteAndroid**: Contém um projeto de Android Studio que constroi uma aplicação Android que faz o papel do cliente.
 2. **ServidorPython**: O servidor **Python** usando o framework `Flask`.
 
-## Compilando esta aplicação
-### Cliente
+## Compilando e construindo esta aplicação
+### Cliente - Construção
 #### Se vocẽ tiver o Android Studio instalado:
 * Gere a aplicação a partir do projeto no **AndroidStudio**
 #### Se vocẽ não tiver o Android Studio instalado:
@@ -21,8 +21,10 @@ export ANDROID_HOME="/opt/android/sdk"
 ./gradlew
 # pronto agora é só esperar gerar o pacote apk para instalar no seu telefone Android
 ```
-
+### Servidor - Construção
 * Rode a aplicação servidora python no console.
+
+## Executando a aplicação
 * Com o servidor Python rodando, entre no cliente Android, edite a caixa de texto **Endereço IPv4** para inserir o ip da sua máquina.
 * No cliente Android, caixa **número da porta** entre com **5000**.
 * Selecione a foto que irá ser enviada ao servidor usando o botão **Selecionar Imagem**.
