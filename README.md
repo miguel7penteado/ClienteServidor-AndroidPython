@@ -16,7 +16,7 @@ wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 sudo unzip /home/sp-miguel/Downloads/sdk-tools-linux-4333796.zip  -d /opt/android/sdk
 
 sudo touch /root/.android/repositories.cfg
-sudo $ANDROID_HOME/tools/bin/sdkmanager --licenses
+sudo echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --licenses
 sudo $ANDROID_HOME/tools/bin/sdkmanager --update
 export ANDROID_HOME="/opt/android/sdk"
 export ANDROID_SDK_ROOT="/opt/android/sdk"
