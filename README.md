@@ -15,11 +15,11 @@ cd /tmp/android/
 wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 sudo unzip /home/sp-miguel/Downloads/sdk-tools-linux-4333796.zip  -d /opt/android/sdk
 
-sudo touch /root/.android/repositories.cfg
-sudo echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --licenses
-sudo $ANDROID_HOME/tools/bin/sdkmanager --update
 export ANDROID_HOME="/opt/android/sdk"
 export ANDROID_SDK_ROOT="/opt/android/sdk"
+sudo touch /root/.android/repositories.cfg
+sudo --preserve-env -- bash -c "echo "y" |$ANDROID_HOME/tools/bin/sdkmanager --licenses"
+sudo --preserve-env -- bash -c "echo "y" |$ANDROID_HOME/tools/bin/sdkmanager --update"
 
 cd $ANDROID_HOME/tools/bin
 sudo ./sdkmanager  "add-ons;addon-google_apis-google-15" \
