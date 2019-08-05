@@ -21,8 +21,7 @@ sudo touch /root/.android/repositories.cfg
 sudo --preserve-env -- bash -c "echo "y" |$ANDROID_HOME/tools/bin/sdkmanager --licenses"
 sudo --preserve-env -- bash -c "echo "y" |$ANDROID_HOME/tools/bin/sdkmanager --update"
 
-cd $ANDROID_HOME/tools/bin
-sudo ./sdkmanager  "add-ons;addon-google_apis-google-15" \
+sudo --preserve-env $ANDROID_HOME/tools/bin/sdkmanager  "add-ons;addon-google_apis-google-15" \
 "add-ons;addon-google_apis-google-16" \
 "add-ons;addon-google_apis-google-17" \
 "add-ons;addon-google_apis-google-18" \
